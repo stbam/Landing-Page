@@ -1,0 +1,57 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box; /* optional ?*/
+}
+.header,.content{
+    background: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.img-content{  
+    display: flex;
+    /* width: 300px; from 07 */
+    /*  */
+     /*width: 300px;
+     height: 200px;*/     
+}
+.header-links{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    
+    list-style: none;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.content{
+    flex-direction: row; /* sol */ 
+}
+a{
+    color: #e5e7eb;
+    font-size: small;
+}
+.contenttwo{
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+}
+.img-text-content{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    text-align: center;
+}
+.Thors-inspiration{
+    font-family: light-italic;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    
+}
+h3{
+    
+}
