@@ -2,13 +2,23 @@
     text-decoration: none;
     box-sizing: border-box; /* optional ?*/
 }
+html,body{
+    margin: 0;
+}
 .header,.content{
+
     background: #1f2937;
     color: #e5e7eb;
     font-size: 18px;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
+}
+.inner_content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 .img-content{  
     display: flex;
