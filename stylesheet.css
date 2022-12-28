@@ -34,13 +34,31 @@ a{
     font-size: small;
 }
 .images{
-
-    width: 1100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    
+    
+    flex: 1; /**/
+   /* width: 1100px;*/ /* flex grow breaks */
+
+     
+}
+
+.section-wrapper { /* not my code but it fixed my thing*/
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.item-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .img-text-content{
-    width: 1100px;
+    /*width: 1100px;*/ /*also breaks flex prop*/
     display: flex; 
     justify-content: space-between;
     /*gap: 100px; /* not an ideal solution for making text boxe align with blue squares*/
@@ -56,6 +74,7 @@ a{
     
 }
 .box1{
+    display: flex;
     border: 2px solid #3497dd;
     width: 150px;
     height: 150px;
@@ -65,7 +84,6 @@ a{
     
 }
 .contenttwo{
-   
     padding: 10px;
     display: flex;
     align-items: center;
@@ -89,4 +107,55 @@ img{
 .Thors-inspiration{
     padding: 100px;
     height: 350px;
+}
+.subtext{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.box-text{
+    display: flex;
+    width: 150px;
+    
+}
+button{
+    width: 100px;
+    height: 30px;
+    background: #3497dd;
+    color: #e5e7eb;
+    border-radius: 5px;
+    border: #1f2937;
+}
+.section-final{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    
+
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #3497dd;
+    color:#e5e7eb;
+    border-radius: 5px;   
+}
+.second-button{
+    border-style: solid;
+    border-color:#e5e7eb ;
+
+}
+button:hover{
+    background-color: #125482;
+}
+.button-pos{
+    padding-left: 10px;
+    display: flex;
+    align-self: center; 
+}
+.sub{    
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
 }
